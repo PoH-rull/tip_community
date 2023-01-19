@@ -1,5 +1,4 @@
-#py -m streamlit run Streamlit.py
-import flip
+#py -m streamlit run app.py
 import random
 import streamlit as st
 from streamlit_option_menu import option_menu
