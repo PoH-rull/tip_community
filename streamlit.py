@@ -1,7 +1,6 @@
 #py -m streamlit run Streamlit.py
-import flip
-import random
 import streamlit as st
+import random
 from streamlit_option_menu import option_menu
 selected= option_menu(
         menu_title=None,
