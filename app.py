@@ -1,6 +1,6 @@
-#py -m streamlit run Streamlit.py
-import streamlit as st
+#py -m streamlit run app.py
 import random
+import streamlit as st
 from streamlit_option_menu import option_menu
 selected= option_menu(
         menu_title=None,
