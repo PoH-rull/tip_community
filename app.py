@@ -2,19 +2,15 @@
 import random
 import streamlit as st
 from streamlit_option_menu import option_menu
-selected= option_menu(
-        menu_title=None,
-        options=["מחשבון","שאלות ותשובות","קצת עלינו","תרומות"],
-        orientation="horizontal",
-    )
-if selected == "מחשבון":
-    st.title("אתה בחרת במחשבון")
-if selected == "שאלות ותשובות":
-    st.title("אתה בחרת בשאלות ותשובות")
-if selected == "קצת עלינו":
-    st.title("אתה בחרת בקצת עלינו")
-if selected == "תרומות":
-    st.title("אתה בחרת בתרומות" )
+tab1, tab2, tab3,tab4 = st.tabs(["מחשבון", "שאלות ותשובות", "קצת עלינו","תרומות"])
+with tab1:
+    st.title("מחשבון")
+with tab2:
+    st.title("שאלות ותשובות")
+with tab3:
+    st.title("עלינו")
+with tab4:
+    st.title("תרומות" )
 def print_results(percent_max,percent_min):
     total_price=st.number_input("Enter price")
     st.write("Total price(with tip):")
