@@ -35,7 +35,7 @@ with tab3:
 with tab4:
     st.title("תרומות" )
  
- #chat GPT
+#chat GPT
 # import streamlit as st
 # def print_results(percent_max):
 #     total_price=float(st.number_input("Enter price"))
