@@ -1,5 +1,14 @@
 # #py -m streamlit run app.py
 import streamlit as st
+q1="שאלה 1 : מה זה טיפ?"
+q2=""
+q3=""
+a1=""
+a2=""
+a3=""
+
+
+
 tab1, tab2, tab3,tab4 = st.tabs(["מחשבון", "שאלות ותשובות", "קצת עלינו","תרומות"])
 def check_tip():
     if indexRate==15:
@@ -30,6 +39,12 @@ with tab1:
     button=st.button("press me when you done",on_click=check_tip())
 with tab2:
     st.title("שאלות ותשובות")
+    st.markdown(f"<p dir='rtl'>{q1}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{a1}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{q2}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{a2}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{q3}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{a3}</p>", unsafe_allow_html=True)
     
 with tab3:
     st.title("עלינו")
