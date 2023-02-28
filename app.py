@@ -12,7 +12,7 @@ def check_tip():
         x=print_results(1)
     else:
         x=print_results(0)
-    st.write(f"the price is {x}")
+    st.write(f"the total price is {x}")
     return x
 def print_results(percent_max):
     total_price=float(st.number_input("Enter price"))
@@ -30,6 +30,7 @@ with tab1:
     button=st.button("press me when you done",on_click=check_tip())
 with tab2:
     st.title("שאלות ותשובות")
+    
 with tab3:
     st.title("עלינו")
 with tab4:
