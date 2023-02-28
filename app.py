@@ -32,7 +32,7 @@ with tab4:
     
     
 def print_results(percent_max):
-    total_price=float(st.number_input("Enter price", key='dasdadasd'))
+    total_price=float(st.number_input("Enter price"))
     x=total_price+(total_price*percent_max/100)
     return x
 
