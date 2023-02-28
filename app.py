@@ -1,11 +1,17 @@
 # #py -m streamlit run app.py
 import streamlit as st
 q1="שאלה 1 : מה זה טיפ?"
-q2=""
-q3=""
-a1=""
-a2=""
-a3=""
+q2="שאלה 2 :כמה מדויק מחשבון האחוזים?"
+q3="שאלה 3 : מה המקסימום אחוזים של טיפ?"
+q4="שאלה 4 : מה המינימום אחוזים של טיפ?"
+q5="שאלה 5 : האם כלי מחשבון עצות זה חינמי לחלוטין?"
+q6=" שאלה 6 : למה המחשבון שלנו שונה מאתרים אחרים?"
+a1="תשובה 1 : תֶּשֶׁר הוא סכום כסף אותו נותן לקוח לעובד שממנו קיבל שירות, בנוסף על החשבון הקבוע, כאות הוקרה על השירות. גודל הסכום תלוי בנוהג המקובל באותו אזור, אופי והיקף השירות וכן איכותו. "
+a2="תשובה 2 : המחשבון מדויק במידת הדיוק שאתה מזין."
+a3="תשובה 3 : המקסימום טיפ הוא 15"
+a4="תשובה 4 : מינימום טיפ זה 0"
+a5="תשובה 5 : כן. כלי מחשבון העצות הוא לגמרי בחינם לשימוש. אינך צריך לשלם דבר כדי להשתמש בשירותים המוצעים על ידי כלי זה."
+a6="תשובה 6 : המשבון שלנו שונה מאחרים בכך שלעומת אחרים הוא מחשב את אחוזי הטיפ לפי שאלות שביעות רצון המשתמש."
 
 
 
@@ -45,6 +51,12 @@ with tab2:
     st.markdown(f"<p dir='rtl'>{a2}</p>", unsafe_allow_html=True)
     st.markdown(f"<p dir='rtl'>{q3}</p>", unsafe_allow_html=True)
     st.markdown(f"<p dir='rtl'>{a3}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{q4}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{a4}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{q5}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{a5}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{q6}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p dir='rtl'>{a6}</p>", unsafe_allow_html=True)
     
 with tab3:
     st.title("עלינו")
