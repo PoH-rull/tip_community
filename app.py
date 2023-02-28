@@ -12,6 +12,7 @@ def check_tip():
         x=print_results(1)
     else:
         x=print_results(0)
+    st.write(f"the price is {x}")
     return x
 with tab1:
     st.title("מחשבון")
@@ -22,7 +23,6 @@ with tab1:
     totalCost=st.slider("was the cost reasonable?(depending on where you were)",max_value=5,min_value=1)
     indexRate=serviceRate+quickFoodRate+totalCost
     button=st.button("press me when you done",on_click=check_tip())
-st.write(check_tip())
 with tab2:
     st.title("שאלות ותשובות")
 with tab3:
